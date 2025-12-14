@@ -1,8 +1,9 @@
 import { SignUp } from "@clerk/nextjs";
+import React from "react";
 
 function SignUpPage() {
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex min-h-screen items-center justify-center bg-gray-100">
       <SignUp />
     </div>
   );

@@ -13,25 +13,26 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
-model User{
+model User {
   id        String      @id @default(uuid())
-  clerkUserId String      @unique
-  email String     @unique
-  name String? 
-  imageUrl String?
-  createdAt DateTime   @default(now())
-  updatedAt DateTime   @updatedAt
-  sleepEntries SleepEntry[]
+  clerkId   String   @unique
+  email     String   @unique
+  name      String?
+  posts     Post[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
-model SleepEntry {
-  id String @id @default(uuid())
-  text String
+model Post {
+  id        String   @id @default(uuid())
+  text     String
   amount Float
-  date DateTime @default(now())
-  userId String
-  user User @relation(fields: [userId], references: [clerkUserId], onDelete: Cascade )
+  date     DateTime @default(now())
+  userId  String
+  user    User     @relation(fields: [userId], references: [clerkId], onDelete: Cascade)
   createdAt DateTime @default(now())
+
   @@index([userId])
+
 }
+
