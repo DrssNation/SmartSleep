@@ -20,8 +20,8 @@ async function header() {
           <Link href="/about" className="text-green-400 hover:text-green-500">
             About
           </Link>
-          <Link href="/track" className="text-green-400 hover:text-green-500">
-            Track
+          <Link href="/contact" className="text-green-400 hover:text-green-500">
+            Contact
           </Link>
 
           <SignedOut>
