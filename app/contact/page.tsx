@@ -22,7 +22,7 @@ const ContactPage = () => {
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center py-16 px-8 bg-white">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-green-400">
-          Contact SmartSleep
+          Contact SmartTrack
         </h1>
         <p className="text-lg md:text-xl text-green-400">
           Have questions or need support? We’re here to help you rest easy.
@@ -106,7 +106,7 @@ const ContactPage = () => {
         <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-12 text-center">
           <div>
             <h3 className="text-xl font-bold mb-2">Email</h3>
-            <p className="text-gray-600">support@smartsleep.com</p>
+            <p className="text-gray-600">support@smarttrack.com</p>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-2">Phone</h3>
@@ -115,7 +115,7 @@ const ContactPage = () => {
           <div>
             <h3 className="text-xl font-bold mb-2">Address</h3>
             <p className="text-gray-600">
-              456 SmartSleep Ave, Wellness City, USA
+              456 SmartTrack Ave, Wellness City, USA
             </p>
           </div>
         </div>

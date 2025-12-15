@@ -13,7 +13,7 @@ async function header() {
       <nav className="p-4 border-b border-border flex items-center justify-between">
         <Link href={"/"} className="text-green-400 sm:text-2xl ml-2">
           <BedSingle className="inline-block mr-2 mb-1" size={24} />
-          SmartSleep
+          SmartTrack
         </Link>
 
         <div className="flex items-center justify-center gap-4">
